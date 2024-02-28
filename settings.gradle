@@ -1,5 +1,9 @@
 pluginManagement {
     repositories {
+        maven {
+            name "aliyun"
+            url "https://maven.aliyun.com/repository/public"
+        }
         gradlePluginPortal()
         google()
         mavenCentral()
