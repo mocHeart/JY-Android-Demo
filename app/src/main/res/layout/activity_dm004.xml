@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_hello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_txt01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/test_txt"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/tv_txt02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/test_txt"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_txt03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/test_txt"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_txt04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/test_txt"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_txt05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/test_txt"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_txt06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/test_txt"
+            android:textColor="#00FFAA"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_txt07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/test_txt"
+            android:textColor="@color/blue"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_txt08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/test_txt"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_txt09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/test_txt"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_txt10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/test_txt"
+            android:textColor="#FFFFFF"
+            android:background="@color/blue"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

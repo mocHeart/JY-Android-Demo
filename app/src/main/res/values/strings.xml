@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">JY-Andriod-Demo</string>
+    <string name="app_name">JY-Android-Demo</string>
+
+    <string name="hello">你好，世界</string>
+    <string name="test_txt">测试文本123abcABC</string>
+
+
 </resources>
