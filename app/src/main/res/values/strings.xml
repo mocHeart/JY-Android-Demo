@@ -1,8 +1,18 @@
 <resources>
     <string name="app_name">JY-Android-Demo</string>
+    <string name="dm003">Demo003</string>
+    <string name="dm004">Demo004</string>
+    <string name="dm005">Demo005</string>
+    <string name="dm006">Demo006</string>
+    <string name="dm007">Demo007</string>
+    <string name="dm008">Demo008</string>
+    <string name="dm009">Demo009</string>
+    <string name="dm010">Demo010</string>
+
 
     <string name="hello">你好，世界</string>
     <string name="test_txt">测试文本123abcABC</string>
+
 
 
 </resources>

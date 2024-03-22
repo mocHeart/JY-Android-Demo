@@ -10,13 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JYAndriodDemo">
         <activity
+            android:name=".activity.dm005.ActivityDm005"
+            android:exported="true"/>
+        <activity
             android:name=".activity.dm004.ActivityDm004"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".activity.dm003.ActivityDm003"
             android:exported="true">
@@ -24,6 +22,10 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/dm005_btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="宽高示例"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/dm005_btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="边距示例"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/dm005_btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="对齐示例"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+    <!-- 宽高示例 -->
+    <LinearLayout
+        android:id="@+id/dm005_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#00ffff"
+            android:text="视图宽度采用wrap_content定义"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#00ffff"
+            android:text="视图宽度采用match_parent定义"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            />
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#00ffff"
+            android:text="视图宽度采用固定大小"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            />
+        <TextView
+            android:id="@+id/dm005_tv_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#00ffff"
+            android:text="通过代码指定视图宽度"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            />
+    </LinearLayout>
+
+
+    <!-- 边距示例 -->
+    <!-- 最外层的布局背景为蓝色-->
+    <LinearLayout
+        android:id="@+id/dm005_2"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#00aaff"
+        android:orientation="vertical" >
+        <!-- 中间层的布局背景为黄色-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:background="#ffff99"
+            android:padding="60dp">
+            <!-- 最内层的视图背景为红色-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ff0000" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!-- 对齐示例 -->
+    <!-- 最外层的布局背景为橙色，它的下级视图在水平方向排列-->
+    <LinearLayout
+        android:id="@+id/dm005_3"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffff99"
+        android:padding="5dp">
+        <!-- 第一个子布局背景为红色，它在上级视图中朝下对齐，它的下级视图则靠左对齐-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="200dp"
+            android:layout_gravity="bottom"
+            android:gravity="start"
+            android:background="#ff0000"
+            android:layout_margin="10dp"
+            android:padding="10dp">
+            <!-- 内部视图的宽度和高度都是100dp，且背景色为青色-->
+            <View
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="#00ffff" />
+        </LinearLayout>
+        <!-- 第二个子布局背景为红色，它在上级视图中朝上对齐，它的下级视图则靠右对齐-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="200dp"
+            android:layout_gravity="top"
+            android:gravity="end"
+            android:background="#ff0000"
+            android:layout_margin="10dp"
+            android:padding="10dp">
+            <!-- 内部视图的宽度和高度都是100dp，且背景色为青色-->
+            <View
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="#00ffff" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
