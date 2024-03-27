@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JYAndriodDemo">
         <activity
+            android:name=".activity.dm007.ActivityDm007"
+            android:exported="true" />
+        <activity
             android:name=".activity.dm006.ActivityDm006"
             android:exported="true" />
         <activity

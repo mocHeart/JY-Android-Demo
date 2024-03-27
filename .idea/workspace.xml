@@ -14,14 +14,13 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="602cc4b9-2f08-4990-9653-0636c15eaab4" name="Default Changelist" comment="demo005:视图View基础(宽高,边距,对齐)">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/dm006/ActivityDm006.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_dm006.xml" afterDir="false" />
+    <list default="true" id="602cc4b9-2f08-4990-9653-0636c15eaab4" name="Default Changelist" comment="demo006:常用布局">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/dm007/ActivityDm007.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_dm007.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +83,10 @@
     </key>
     <key name="android.template.1817869959">
       <recent name="com.hg.jy.activity.dm005" />
+    </key>
+    <key name="android.template.1061771849">
+      <recent name="com.hg.jy.activity.dm007" />
+      <recent name="com.hg.jy.activity" />
     </key>
     <key name="android.template.-1521286479">
       <recent name="com.hg.jy.activity.dm004" />
@@ -188,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1711078125552</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="demo006:常用布局">
+      <created>1711543342916</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1711543342916</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -209,7 +219,8 @@
     <MESSAGE value="demo003:认识XML描绘页面和Java修改页面" />
     <MESSAGE value="demo004:文本显示-TextView.md" />
     <MESSAGE value="demo005:视图View基础(宽高,边距,对齐)" />
-    <option name="LAST_COMMIT_MESSAGE" value="demo005:视图View基础(宽高,边距,对齐)" />
+    <MESSAGE value="demo006:常用布局" />
+    <option name="LAST_COMMIT_MESSAGE" value="demo006:常用布局" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
