@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/dm006_btn1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="线性布局示例"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/dm006_btn2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:text="相对布局示例"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/dm006_btn3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:text="网格布局示例"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/dm006_btn4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:text="滚动布局示例"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!-- 线性布局示例 -->
+    <LinearLayout
+        android:id="@+id/dm006_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- 从左到右水平方向排列 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="横排第一个"
+                android:textSize="20sp"
+                android:textColor="#FF0000FF" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="横排第二个"
+                android:textSize="20sp"
+                android:textColor="#FF0055FF" />
+        </LinearLayout>
+
+        <!-- 从上到下垂直方向排列 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="竖排第一个"
+                android:textSize="20sp"
+                android:textColor="#FFFF0000" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="竖排第二个"
+                android:textSize="20sp"
+                android:textColor="#FFFF7700" />
+        </LinearLayout>
+
+        <!-- 布局权重 layout_weight 水平 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="横排第一个"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="#009900" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="横排第二个"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="#00CC22" />
+        </LinearLayout>
+
+        <!-- 布局权重 layout_weight 垂直 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="竖排第一个"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="#AA0000" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:text="竖排第二个"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="#DD2200" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 相对布局示例 -->
+    <RelativeLayout
+        android:id="@+id/dm006_2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="10dp"
+        android:background="#cecece">
+        <!-- 在上级视图的正中间 -->
+        <TextView
+            android:id="@+id/tv_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="#ee0000"
+            android:text="正中间"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+        <!-- 在上级视图的顶部水平中间 -->
+        <TextView
+            android:id="@+id/tv_center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="#eaeaaa"
+            android:text="在上级水平中间"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+        <!-- 在上级视图的左侧垂直中间 -->
+        <TextView
+            android:id="@+id/tv_center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="#adad00"
+            android:text="上级垂直中间"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+        <!-- 和上级视图的左侧对齐 -->
+        <TextView
+            android:id="@+id/tv_parent_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:background="#aaeeaa"
+            android:text="跟上级左边对齐(重叠1)"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+        <!-- 和上级视图的右侧对齐 -->
+        <TextView
+            android:id="@+id/tv_parent_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="#eeaa00"
+            android:text="我跟上级右边对齐"
+            android:textSize="15sp"
+            android:textColor="#000000" />
+        <!-- 和上级视图的顶部对齐 -->
+        <TextView
+            android:id="@+id/tv_parent_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="#accaee"
+            android:text="跟上级顶部对齐(重叠1)"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+        <!-- 和上级视图的底部对齐 -->
+        <TextView
+            android:id="@+id/tv_parent_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#ceecaa"
+            android:text="跟上级底部对齐"
+            android:textSize="15sp"
+            android:textColor="#000000" />
+        <!-- 在指定视图的左边且顶部对齐 -->
+        <TextView
+            android:id="@+id/tv_left_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_center"
+            android:layout_toStartOf="@+id/tv_center"
+            android:background="#faafee"
+            android:text="相对的左顶齐"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+        <!-- 在指定视图的右边且底部对齐 -->
+        <TextView
+            android:id="@+id/tv_right_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tv_center"
+            android:layout_alignBottom="@+id/tv_center"
+            android:background="#dacd00"
+            android:text="相对的右边且底对齐"
+            android:textSize="15sp"
+            android:textColor="#000000" />
+        <!-- 在指定视图的上面且右对齐 -->
+        <TextView
+            android:id="@+id/tv_above_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_center"
+            android:layout_alignEnd="@+id/tv_center"
+            android:background="#5adeaa"
+            android:text="相对的上边且右对齐"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+        <!-- 在指定视图的下面且左对齐 -->
+        <TextView
+            android:id="@+id/tv_below_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_center"
+            android:layout_alignStart="@+id/tv_center"
+            android:background="#a0dad0"
+            android:text="相对的下边且左对齐"
+            android:textSize="15sp"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+    <!-- 计算器面板布局示例 -->
+    <GridLayout
+        android:id="@+id/dm006_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:orientation="horizontal"
+        android:columnCount="4"
+        android:rowCount="6">
+        <TextView
+            android:layout_columnSpan="4"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_gravity="fill"
+            android:background="#FFCCCC"
+            android:text="0"
+            android:textSize="50sp" />
+        <Button
+            android:layout_columnSpan="2"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="fill"
+            android:text="回退" />
+        <Button
+            android:layout_columnSpan="2"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_gravity="fill"
+            android:text="清空" />
+        <Button
+            android:layout_marginStart="5dp"
+            android:layout_gravity="fill"
+            android:text="+" />
+        <Button
+            android:layout_marginStart="5dp"
+            android:layout_gravity="fill"
+            android:text="1" />
+        <Button
+            android:layout_marginStart="5dp"
+            android:layout_gravity="fill"
+            android:text="2" />
+        <Button
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_gravity="fill"
+            android:text="3" />
+        <Button
+            android:layout_marginStart="5dp"
+            android:layout_gravity="fill"
+            android:text="-" />
+        <Button
+            android:layout_marginStart="5dp"
+            android:layout_gravity="fill"
+            android:text="4" />
+        <Button
+            android:layout_marginStart="5dp"
+            android:layout_gravity="fill"
+            android:text="5" />
+        <Button
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_gravity="fill"
+            android:text="6" />
+        <Button
+            android:layout_marginStart="5dp"
+            android:layout_gravity="fill"
+            android:text="*" />
+        <Button
+            android:layout_marginStart="5dp"
+            android:layout_gravity="fill"
+            android:text="7" />
+        <Button
+            android:layout_marginStart="5dp"
+            android:layout_gravity="fill"
+            android:text="8" />
+        <Button
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_gravity="fill"
+            android:text="9" />
+        <Button
+            android:layout_gravity="fill"
+            android:layout_marginStart="5dp"
+            android:text="/" />
+        <Button
+            android:layout_gravity="fill"
+            android:layout_marginStart="5dp"
+            android:text="." />
+        <Button
+            android:layout_marginStart="5dp"
+            android:layout_gravity="fill"
+            android:text="0" />
+        <Button
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_gravity="fill"
+            android:text="=" />
+    </GridLayout>
+
+
+    <!-- HorizontalScrollView是水平方向的滚动视图，当前高度为200dp -->
+    <HorizontalScrollView
+        android:id="@+id/dm006_4"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp">
+        <!-- 水平方向的线性布局，两个子视图的颜色分别为青色和黄色-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:background="#aaffff" />
+            <View
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:background="#ffff00" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- ScrollView是垂直方向的滚动视图，当前高度为自适应-->
+    <ScrollView
+        android:id="@+id/dm006_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- 垂直方向的线性布局，两个子视图的颜色分别为绿色和橙色-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:background="#00ff00" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:background="#ffffaa" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

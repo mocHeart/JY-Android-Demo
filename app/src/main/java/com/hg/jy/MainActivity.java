@@ -11,6 +11,7 @@ import android.widget.Button;
 import com.hg.jy.activity.dm003.ActivityDm003;
 import com.hg.jy.activity.dm004.ActivityDm004;
 import com.hg.jy.activity.dm005.ActivityDm005;
+import com.hg.jy.activity.dm006.ActivityDm006;
 
 @SuppressLint("NonConstantResourceId")
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -44,6 +45,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.dm005:
                 startActivity(new Intent(this, ActivityDm005.class));
+                break;
+            case R.id.dm006:
+                startActivity(new Intent(this, ActivityDm006.class));
                 break;
         }
     }
