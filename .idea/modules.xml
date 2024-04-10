@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/JY-Andriod-Demo.iml" filepath="$PROJECT_DIR$/.idea/modules/JY-Andriod-Demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/JY-Andriod-Demo.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/JY-Andriod-Demo.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/JY-Andriod-Demo.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/JY-Andriod-Demo.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/JY-Andriod-Demo.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/JY-Andriod-Demo.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/JY-Andriod-Demo.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/JY-Andriod-Demo.app.unitTest.iml" />
     </modules>
   </component>
 </project>
