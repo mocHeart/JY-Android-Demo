@@ -9,6 +9,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JYAndriodDemo">
         <activity
+            android:name=".activity.dm009.Act009LoginSuccess"
+            android:exported="false" />
+        <activity
+            android:name=".activity.dm009.Act009LoginInput"
+            android:exported="false" />
+        <activity
+            android:name=".activity.dm009.PageTwoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.dm009.PageOneActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.dm008.ActivityDm008"
             android:exported="true" />
         <activity

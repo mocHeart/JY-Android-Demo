@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Page-One"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/dm009_btn_act_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="跳转到下个页面"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/dm009_btn_act_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="跳转到登录页面"
+        android:textSize="20sp" />
+
+
+</LinearLayout>
