@@ -9,6 +9,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JYAndriodDemo">
         <activity
+            android:name=".activity.dm010.Dm010NextActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.dm010.Act010IntentUri"
+            android:exported="false" />
+        <activity
             android:name=".activity.dm009.Act009LoginSuccess"
             android:exported="false" />
         <activity
@@ -31,7 +37,13 @@
             android:exported="true" />
         <activity
             android:name=".activity.dm005.ActivityDm005"
-            android:exported="true" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.NING" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".activity.dm004.ActivityDm004"
             android:exported="true" />
