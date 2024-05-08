@@ -9,6 +9,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JYAndriodDemo">
         <activity
+            android:name=".activity.dm011.Act011"
+            android:exported="false">
+            <meta-data android:name="weather" android:value="晴天" />
+        </activity>
+        <activity
             android:name=".activity.dm010.Dm010NextActivity"
             android:exported="false" />
         <activity
@@ -58,6 +63,8 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <!-- 指定快捷方式。在桌面上长按应用图标，就会弹出@xml/shortcuts所描述的快捷菜单-->
+            <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts" />
         </activity>
     </application>
 

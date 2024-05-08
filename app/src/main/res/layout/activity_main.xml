@@ -5,68 +5,86 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        android:textSize="25sp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/dm003"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/dm003"
-        android:textSize="25sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textSize="25sp" />
 
-    <Button
-        android:id="@+id/dm004"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/dm004"
-        android:textSize="25sp" />
+            <Button
+                android:id="@+id/dm003"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dm003"
+                android:textSize="25sp" />
 
-    <Button
-        android:id="@+id/dm005"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/dm005"
-        android:textSize="25sp" />
+            <Button
+                android:id="@+id/dm004"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dm004"
+                android:textSize="25sp" />
 
-    <Button
-        android:id="@+id/dm006"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/dm006"
-        android:textSize="25sp" />
+            <Button
+                android:id="@+id/dm005"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dm005"
+                android:textSize="25sp" />
 
-    <Button
-        android:id="@+id/dm007"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/dm007"
-        android:textSize="25sp" />
+            <Button
+                android:id="@+id/dm006"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dm006"
+                android:textSize="25sp" />
 
-    <Button
-        android:id="@+id/dm008"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Demo008"
-        android:textSize="25sp" />
+            <Button
+                android:id="@+id/dm007"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dm007"
+                android:textSize="25sp" />
 
-    <Button
-        android:id="@+id/dm009"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Demo009"
-        android:textSize="25sp" />
+            <Button
+                android:id="@+id/dm008"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Demo008"
+                android:textSize="25sp" />
 
-    <Button
-        android:id="@+id/dm010"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Demo010"
-        android:textSize="25sp" />
+            <Button
+                android:id="@+id/dm009"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Demo009"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/dm010"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Demo010"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/dm011"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Demo011"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+    </ScrollView>
 
 
 </LinearLayout>
