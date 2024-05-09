@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+  android:innerRadius="100dp"
+  android:shape="ring"
+  android:thickness="80dp"
+  android:useLevel="false" >
+
+  <!-- 设置渐变填充色 -->
+  <gradient
+    android:startColor="#00f"
+    android:centerColor="#0f0"
+    android:endColor="#f00"/>
+
+  <size android:height="44dp" />
+
+  <stroke
+    android:width="2dp"
+    android:color="#f00"
+    android:dashWidth="5dp"
+    android:dashGap="5dp"/>
+
+</shape>
