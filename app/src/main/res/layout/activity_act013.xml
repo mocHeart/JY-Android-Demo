@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  android:padding="5dp" >
+
+  <TextView
+    android:id="@+id/dm013_tv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:text="..."
+    android:textSize="20sp" />
+
+  <CheckBox
+    android:id="@+id/dm013_ck_system"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:checked="false"
+    android:text="这是系统的CheckBox"
+    android:textColor="@color/black"
+    android:textSize="17sp" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_gravity="start"
+      android:layout_weight="1"
+      android:padding="5dp"
+      android:text="Switch开关：" />
+
+    <Switch
+      android:id="@+id/dm013_sw_status"
+      android:layout_width="80dp"
+      android:layout_height="30dp"
+      android:layout_gravity="end"
+      android:padding="5dp"
+      tools:ignore="UseSwitchCompatOrMaterialXml" />
+  </LinearLayout>
+
+  <TextView
+    android:id="@+id/dm013_tv_result"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:gravity="start" />
+
+  <!-- 仿IOS的Switch -->
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_gravity="start"
+      android:layout_weight="1"
+      android:padding="5dp"
+      android:text="Switch开关：" />
+    <CheckBox
+      android:id="@+id/dm013_ck_status"
+      android:layout_width="60dp"
+      android:layout_height="30dp"
+      android:layout_gravity="end"
+      android:background="@drawable/switch_selector"
+      android:button="@null" />
+  </LinearLayout>
+
+  <!-- 单选按钮组 -->
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="请选择您的性别：" />
+
+  <RadioGroup
+    android:id="@+id/rg_gender"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RadioButton
+      android:id="@+id/rb_male"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:text="男" />
+
+    <RadioButton
+      android:id="@+id/rb_female"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:text="女" />
+
+  </RadioGroup>
+
+  <TextView
+    android:id="@+id/dm013_tv_res"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp" />
+
+
+</LinearLayout>

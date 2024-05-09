@@ -32,6 +32,11 @@
           <theme>@style/Theme.JYAndriodDemo</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_act013.xml">
+        <config>
+          <theme>@style/Theme.JYAndriodDemo</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_dm008.xml">
         <config>
           <theme>@style/Theme.JYAndriodDemo</theme>
@@ -67,28 +72,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="602cc4b9-2f08-4990-9653-0636c15eaab4" name="Default Changelist" comment="demo011:Activity的附加信息">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/dm012/Act012.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/button_normal_orig.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/button_normal_orig_bak.9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/btn_state.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/button_normal.9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/button_pressed.9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/shape_demo1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/shape_demo2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/shape_demo3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/shape_demo4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/shape_demo5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/shape_oval_rose.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/shape_rect_gold.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_act012.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/appInsightsSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/appInsightsSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/dm013/Act013.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/check_choose.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/check_unchoose.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/switch_off.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/switch_on.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/switch_selector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_act013.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/MainActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +159,7 @@
     "cidr.known.project.marker": "true",
     "com.google.services.firebase.aqiPopupShown": "true",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/haige/Documents/code/android/JYAndriodDemo/app/src/main/res/drawable",
+    "last_opened_file_path": "C:/Users/haige/Documents/code/android/JYAndriodDemo/app/src/main/res/drawable-v24",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.17",
     "project.structure.side.proportion": "0.2",
@@ -179,24 +173,8 @@
     <key name="android.template.-2006779765">
       <recent name="com.hg.jy.activity.dm006" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\haige\Documents\code\android\JYAndriodDemo\app\src\main\res\drawable" />
-      <recent name="E:\code\android\JYAndriodDemo\app\src\main\res\drawable" />
-    </key>
-    <key name="android.template.142269403">
-      <recent name="com.hg.jy.activity.dm009" />
-    </key>
     <key name="android.template.1817869959">
       <recent name="com.hg.jy.activity.dm005" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\haige\Documents\code\android\JYAndriodDemo\app\src\main\res\drawable-v24" />
-      <recent name="C:\Users\haige\Documents\code\android\JYAndriodDemo\app\src\main\res\layout" />
-      <recent name="C:\Users\haige\Documents\code\android\JYAndriodDemo\app\src\main\res\layout\dm008" />
-    </key>
-    <key name="android.template.1612664133">
-      <recent name="com.hg.jy.activity.dm011" />
-      <recent name="com.hg.jy.activity.dm010" />
     </key>
     <key name="android.template.-248456118">
       <recent name="com.hg.jy.activity.dm010" />
@@ -205,9 +183,6 @@
     <key name="android.template.1061771849">
       <recent name="com.hg.jy.activity.dm007" />
       <recent name="com.hg.jy.activity" />
-    </key>
-    <key name="android.template.1162167373">
-      <recent name="com.hg.jy.activity.dm012" />
     </key>
     <key name="android.template.-1521286479">
       <recent name="com.hg.jy.activity.dm004" />
@@ -218,6 +193,30 @@
     </key>
     <key name="android.template.-1536494758">
       <recent name="com.hg.jy.activity.dm009" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\haige\Documents\code\android\JYAndriodDemo\app\src\main\res\drawable-v24" />
+      <recent name="C:\Users\haige\Documents\code\android\JYAndriodDemo\app\src\main\res\drawable" />
+      <recent name="E:\code\android\JYAndriodDemo\app\src\main\res\drawable" />
+    </key>
+    <key name="android.template.142269403">
+      <recent name="com.hg.jy.activity.dm009" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\haige\Documents\code\android\JYAndriodDemo\app\src\main\res\drawable" />
+      <recent name="C:\Users\haige\Documents\code\android\JYAndriodDemo\app\src\main\res\drawable-v24" />
+      <recent name="C:\Users\haige\Documents\code\android\JYAndriodDemo\app\src\main\res\layout" />
+      <recent name="C:\Users\haige\Documents\code\android\JYAndriodDemo\app\src\main\res\layout\dm008" />
+    </key>
+    <key name="android.template.1612664133">
+      <recent name="com.hg.jy.activity.dm011" />
+      <recent name="com.hg.jy.activity.dm010" />
+    </key>
+    <key name="android.template.1375700990">
+      <recent name="com.hg.jy.activity.dm013" />
+    </key>
+    <key name="android.template.1162167373">
+      <recent name="com.hg.jy.activity.dm012" />
     </key>
   </component>
   <component name="RunManager" selected="Android App.app">
