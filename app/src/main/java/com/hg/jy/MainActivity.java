@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.hg.jy.activity.dm014.Act014;
 import com.hg.jy.activity.dm003.ActivityDm003;
 import com.hg.jy.activity.dm004.ActivityDm004;
 import com.hg.jy.activity.dm005.ActivityDm005;
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button dm011Btn = findViewById(R.id.dm011);
         Button dm012Btn = findViewById(R.id.dm012);
         Button dm013Btn = findViewById(R.id.dm013);
+        Button dm014Btn = findViewById(R.id.dm014);
         dm003Btn.setOnClickListener(this);
         dm004Btn.setOnClickListener(this);
         dm005Btn.setOnClickListener(this);
@@ -50,6 +52,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         dm011Btn.setOnClickListener(this);
         dm012Btn.setOnClickListener(this);
         dm013Btn.setOnClickListener(this);
+        dm014Btn.setOnClickListener(this);
 
     }
 
@@ -88,6 +91,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.dm013:
                 startActivity(new Intent(this, Act013.class));
+                break;
+            case R.id.dm014:
+                startActivity(new Intent(this, Act014.class));
                 break;
         }
     }

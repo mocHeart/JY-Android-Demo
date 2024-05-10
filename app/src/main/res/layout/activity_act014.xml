@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <TextView
+    android:id="@+id/dm014_showStr"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:text="..."
+    android:textSize="20sp" />
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:text="下面是登录信息"
+    android:textColor="@color/black"
+    android:textSize="17sp" />
+
+  <EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="text"
+    android:maxLength="10"
+    android:hint="请输入用户名"
+    android:textColor="@color/black"
+    android:textSize="17sp" />
+
+  <EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="textPassword"
+    android:maxLength="8"
+    android:hint="请输入密码"
+    android:textColor="@color/black"
+    android:textSize="17sp" />
+
+
+  <EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="text"
+    android:hint="这是默认边框"
+    android:textColor="@color/black"
+    android:textSize="17sp" />
+
+  <EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:inputType="text"
+    android:hint="我的边框不见了"
+    android:background="@null"
+    android:textColor="@color/black"
+    android:textSize="17sp" />
+
+  <EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:inputType="text"
+    android:hint="我的边框是圆角"
+    android:background="@drawable/editext_selector"
+    android:textColor="@color/black"
+    android:textSize="17sp" />
+
+
+  <EditText
+    android:id="@+id/dm014_phone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:inputType="text"
+    android:hint="请输入11位手机号码"
+    android:background="@drawable/editext_selector"
+    android:textColor="@color/black"
+    android:textSize="17sp" />
+
+  <EditText
+    android:id="@+id/dm014_pwd"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:inputType="numberPassword"
+    android:hint="请输入6位密码"
+    android:background="@drawable/editext_selector"
+    android:textColor="@color/black"
+    android:textSize="17sp" />
+
+  <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    android:text="登录"
+    android:textSize="20sp" />
+
+
+</LinearLayout>
