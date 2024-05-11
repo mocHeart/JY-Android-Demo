@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <RadioGroup
+    android:id="@+id/sz001_rg_login"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal">
+    <RadioButton
+      android:id="@+id/sz001_rb_password"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:checked="true"
+      android:text="@string/login_by_password"
+      android:textColor="@color/black"
+      android:textSize="17sp" />
+    <RadioButton
+      android:id="@+id/sz001_rb_verifycode"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:text="@string/login_by_verifycode"
+      android:textColor="@color/black"
+      android:textSize="17sp" />
+  </RadioGroup>
+
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal">
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:text="@string/phone_number"
+      android:textColor="@color/black"
+      android:textSize="17sp" />
+    <EditText
+      android:id="@+id/sz001_et_phone"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_marginTop="5dp"
+      android:layout_marginBottom="5dp"
+      android:layout_weight="1"
+      android:background="@drawable/editext_selector"
+      android:hint="@string/input_phone_number"
+      android:inputType="phone"
+      android:maxLength="11"
+      android:textColor="@color/black"
+      android:textColorHint="#cccccc"
+      android:textSize="17sp" />
+  </LinearLayout>
+
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal">
+    <TextView
+      android:id="@+id/sz001_tv_password"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:text="@string/login_password"
+      android:textColor="@color/black"
+      android:textSize="17sp" />
+    <RelativeLayout
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="1">
+      <EditText
+        android:id="@+id/sz001_et_password"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/editext_selector"
+        android:hint="@string/input_password"
+        android:inputType="numberPassword"
+        android:maxLength="11"
+        android:textColor="@color/black"
+        android:textColorHint="#cccccc"
+        android:textSize="17sp"
+        android:autofillHints="" />
+      <Button
+        android:id="@+id/sz001_btn_forget"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:text="@string/forget_password"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        tools:ignore="RelativeOverlap" />
+    </RelativeLayout>
+  </LinearLayout>
+
+
+  <CheckBox
+    android:id="@+id/sz001_ck_remember"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:button="@drawable/checkbox_selector"
+    android:text="@string/remember_password"
+    android:textColor="@color/black"
+    android:textSize="17sp" />
+
+  <Button
+    android:id="@+id/sz001_btn_login"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/login"
+    android:textColor="@color/black"
+    android:textSize="20sp" />
+</LinearLayout>

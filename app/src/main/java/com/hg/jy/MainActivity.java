@@ -21,6 +21,7 @@ import com.hg.jy.activity.dm011.Act011;
 import com.hg.jy.activity.dm012.Act012;
 import com.hg.jy.activity.dm013.Act013;
 import com.hg.jy.activity.dm015.Act015;
+import com.hg.jy.activity.sz001.Asz001;
 
 @SuppressLint("NonConstantResourceId")
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -56,6 +57,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         dm013Btn.setOnClickListener(this);
         dm014Btn.setOnClickListener(this);
         dm015Btn.setOnClickListener(this);
+
+        Button sz015Btn = findViewById(R.id.sz001);
+        sz015Btn.setOnClickListener(this);
 
     }
 
@@ -100,6 +104,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.dm015:
                 startActivity(new Intent(this, Act015.class));
+                break;
+
+
+            case R.id.sz001:
+                startActivity(new Intent(this, Asz001.class));
                 break;
         }
     }

@@ -47,6 +47,16 @@
           <theme>@style/Theme.JYAndriodDemo</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_asz001.xml">
+        <config>
+          <theme>@style/Theme.JYAndriodDemo</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_asz001_login_forget.xml">
+        <config>
+          <theme>@style/Theme.JYAndriodDemo</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_dm008.xml">
         <config>
           <theme>@style/Theme.JYAndriodDemo</theme>
@@ -81,9 +91,12 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="602cc4b9-2f08-4990-9653-0636c15eaab4" name="Default Changelist" comment="demo014: 文本输入EditText">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/dm015/Act015.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_act015.xml" afterDir="false" />
+    <list default="true" id="602cc4b9-2f08-4990-9653-0636c15eaab4" name="Default Changelist" comment="demo015: 对话框xxDialog">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/sz001/Asz001.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/sz001/Asz001LoginForget.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/checkbox_selector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_asz001.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_asz001_login_forget.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/MainActivity.java" afterDir="false" />
@@ -124,8 +137,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="resourceFile" />
         <option value="Class" />
+        <option value="resourceFile" />
       </list>
     </option>
   </component>
@@ -229,6 +242,8 @@
       <recent name="com.hg.jy.activity.dm012" />
     </key>
     <key name="android.template.2052711717">
+      <recent name="com.hg.jy.activity.sz001" />
+      <recent name="com.hg.jy.activity.sz100" />
       <recent name="com.hg.jy.activity.dm015" />
     </key>
   </component>
@@ -451,7 +466,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715313581534</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="demo015: 对话框xxDialog">
+      <option name="closed" value="true" />
+      <created>1715393076160</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1715393076160</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -481,7 +504,8 @@
     <MESSAGE value="demo011:Activity的附加信息" />
     <MESSAGE value="demo013: 选择按钮" />
     <MESSAGE value="demo014: 文本输入EditText" />
-    <option name="LAST_COMMIT_MESSAGE" value="demo014: 文本输入EditText" />
+    <MESSAGE value="demo015: 对话框xxDialog" />
+    <option name="LAST_COMMIT_MESSAGE" value="demo015: 对话框xxDialog" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

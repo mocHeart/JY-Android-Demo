@@ -110,6 +110,13 @@
               android:layout_height="wrap_content"
               android:text="Demo015"
               android:textSize="25sp" />
+
+            <Button
+              android:id="@+id/sz001"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Sezo001"
+              android:textSize="25sp" />
         </LinearLayout>
 
     </ScrollView>
