@@ -9,6 +9,9 @@
     android:supportsRtl="true"
     android:theme="@style/Theme.JYAndriodDemo">
     <activity
+      android:name=".activity.dm015.Act015"
+      android:exported="false" />
+    <activity
       android:name=".activity.dm014.Act014"
       android:exported="false" />
     <activity

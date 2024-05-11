@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <TextView
+    android:id="@+id/dm015_showStr"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:text="..."
+    android:textSize="20sp" />
+
+
+  <Button
+    android:id="@+id/dm015_alert_btn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="弹出提醒对话框"
+    android:textSize="20sp" />
+
+  <TextView
+    android:id="@+id/dm015_alert_res"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:text="AlertDialog Result."
+    android:textSize="20sp" />
+
+  <Button
+    android:id="@+id/dm015_date_btn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="弹出日期选择框"
+    android:textSize="20sp" />
+
+  <TextView
+    android:id="@+id/dm015_date_res"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:text="DatePickerDialog Result."
+    android:textSize="20sp" />
+
+  <Button
+    android:id="@+id/dm015_time_btn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="弹出时间选择框"
+    android:textSize="20sp" />
+
+  <TextView
+    android:id="@+id/dm015_time_res"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:text="TimePickerDialog Result."
+    android:textSize="20sp" />
+
+</LinearLayout>
