@@ -3,9 +3,11 @@ package com.hg.jy.activity.sz001;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -37,7 +39,7 @@ public class Asz001 extends AppCompatActivity implements RadioGroup.OnCheckedCha
     private RadioButton rb_verifycode;
     private ActivityResultLauncher<Intent> register;
     private Button btn_login;
-    private String mPassword = "111111";
+    private String mPassword = "123456";
     private String mVerifyCode;
 
     @Override
@@ -75,7 +77,12 @@ public class Asz001 extends AppCompatActivity implements RadioGroup.OnCheckedCha
                 }
             }
         });
+    }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
     }
 
     @SuppressLint("NonConstantResourceId")
