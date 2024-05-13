@@ -2,7 +2,9 @@ package com.hg.jy.activity.sz001;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.text.Editable;
@@ -11,6 +13,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -28,7 +31,7 @@ import com.hg.jy.activity.utils.ViewUtil;
 
 import java.util.Random;
 
-public class Asz001 extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener, View.OnClickListener {
+public class Asz001 extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener, View.OnClickListener, CompoundButton.OnCheckedChangeListener {
 
     private TextView tv_password;
     private EditText et_password;
@@ -41,6 +44,9 @@ public class Asz001 extends AppCompatActivity implements RadioGroup.OnCheckedCha
     private Button btn_login;
     private String mPassword = "123456";
     private String mVerifyCode;
+
+    private SharedPreferences mShared;
+    private boolean isRemember = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +65,7 @@ public class Asz001 extends AppCompatActivity implements RadioGroup.OnCheckedCha
 
         // 给rg_login(单选按钮组RadioGroup)设置单选监听器
         rb_login.setOnCheckedChangeListener(this);
+        ck_remember.setOnCheckedChangeListener(this);
 
         // 给et_phone添加文本变更监听器
         et_phone.addTextChangedListener(new HideTextWatcher(et_phone, 11));
@@ -77,6 +84,20 @@ public class Asz001 extends AppCompatActivity implements RadioGroup.OnCheckedCha
                 }
             }
         });
+
+        // 从share_login.xml获取共享参数对象
+        mShared = getSharedPreferences("share_login", MODE_PRIVATE);
+        // 获取共享参数保存的手机号码
+        String phone = mShared.getString("phone", "");
+        // 获取共享参数保存的密码
+        String password = mShared.getString("password", "");
+        // 获取记住密码的状态
+        boolean isRem = mShared.getBoolean("isRemember", false);
+        et_phone.setText(phone); // 往手机号码编辑框填写上次保存的手机号
+        if (isRem) {
+            et_password.setText(password); // 往密码编辑框填写上次保存的密码
+            ck_remember.setChecked(true);
+        }
     }
 
     @Override
@@ -159,6 +180,16 @@ public class Asz001 extends AppCompatActivity implements RadioGroup.OnCheckedCha
 
     // 校验通过，登录成功
     private void loginSuccess() {
+        // 如果勾选了“记住密码”，就把手机号码和密码都保存到共享参数中
+        if (isRemember) {
+            SharedPreferences.Editor editor = mShared.edit(); // 获得编辑器的对象
+            editor.putString("phone", et_phone.getText().toString()); // 添加名叫phone的手机号码
+            editor.putString("password", et_password.getText().toString()); // 添加名叫password的密码
+            editor.putBoolean("isRemember", true);
+            editor.apply(); // 提交编辑器中的修改
+        }
+
+
         String desc = String.format("您的手机号码是%s，恭喜你通过登录验证，点击“确定”按钮返回上个页面",
                 et_phone.getText().toString());
         // 以下弹出提醒对话框，提示用户登录成功
@@ -171,6 +202,16 @@ public class Asz001 extends AppCompatActivity implements RadioGroup.OnCheckedCha
         builder.setNegativeButton("我再看看", null);
         AlertDialog dialog = builder.create();
         dialog.show();
+    }
+
+    @Override
+    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+        isRemember = isChecked;
+        if (!isRemember) {
+            SharedPreferences.Editor editor = mShared.edit();
+            editor.putBoolean("isRemember", false);
+            editor.apply(); // 提交编辑器中的修改
+        }
     }
 
 

@@ -9,6 +9,9 @@
     android:supportsRtl="true"
     android:theme="@style/Theme.JYAndriodDemo">
     <activity
+      android:name=".activity.dm016.Act016"
+      android:exported="false" />
+    <activity
       android:name=".activity.sz001.Asz001LoginForget"
       android:exported="false" />
     <activity
