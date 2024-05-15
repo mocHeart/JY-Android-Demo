@@ -52,6 +52,16 @@
           <theme>@style/Theme.JYAndriodDemo</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_act017.xml">
+        <config>
+          <theme>@style/Theme.JYAndriodDemo</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_act017_sqlite.xml">
+        <config>
+          <theme>@style/Theme.JYAndriodDemo</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_asz001.xml">
         <config>
           <theme>@style/Theme.JYAndriodDemo</theme>
@@ -96,13 +106,18 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="602cc4b9-2f08-4990-9653-0636c15eaab4" name="Default Changelist" comment="sezo001: 竖屏显示和去除标题栏">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/dm016/Act016.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_act016.xml" afterDir="false" />
+    <list default="true" id="602cc4b9-2f08-4990-9653-0636c15eaab4" name="Default Changelist" comment="demo016: 共享参数SharedPreferences和对实例1记住密码功能的补全">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/dm017/Act017.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/dm017/Act017Sqlite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/dm017/database/UserDBHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/dm017/enity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/utils/ToastUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_act017.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_act017_sqlite.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/sz001/Asz001.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/sz001/Asz001.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -139,8 +154,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="resourceFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -174,25 +189,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ScreenshotViewer.SavePath": "C:/Users/haige/Documents/JYnote/Android/md/img",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "com.google.services.firebase.aqiPopupShown": "true",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/haige/Documents/code/android/JYAndriodDemo/app/src/main/res/drawable-v24",
-    "memory.settings.postsync.last.time.stamp": "1715568443498",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.17",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ScreenshotViewer.SavePath&quot;: &quot;C:/Users/haige/Documents/JYnote/Android/md/img&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/haige/Documents/code/android/JYAndriodDemo/app/src/main/res/drawable-v24&quot;,
+    &quot;memory.settings.postsync.last.time.stamp&quot;: &quot;1715670637612&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
-}]]></component>
+}</component>
   <component name="PsdUISettings">
     <option name="MODULE_TAB" value="Properties" />
   </component>
@@ -214,6 +229,9 @@
     <key name="android.template.-1521286479">
       <recent name="com.hg.jy.activity.dm004" />
       <recent name="com.hg.jy.activity.dm003" />
+    </key>
+    <key name="android.template.1004429125">
+      <recent name="com.hg.jy.activity.dm017" />
     </key>
     <key name="android.template.-1346594278">
       <recent name="com.hg.jy.activity.dm008" />
@@ -247,6 +265,9 @@
     </key>
     <key name="android.template.1375700990">
       <recent name="com.hg.jy.activity.dm013" />
+    </key>
+    <key name="android.template.1273939523">
+      <recent name="com.hg.jy.activity.dm017" />
     </key>
     <key name="android.template.1162167373">
       <recent name="com.hg.jy.activity.dm012" />
@@ -500,7 +521,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715564642460</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="demo016: 共享参数SharedPreferences和对实例1记住密码功能的补全">
+      <option name="closed" value="true" />
+      <created>1715572278867</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1715572278867</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -533,7 +562,8 @@
     <MESSAGE value="demo015: 对话框xxDialog" />
     <MESSAGE value="sezo001: 用户登录和找回密码" />
     <MESSAGE value="sezo001: 竖屏显示和去除标题栏" />
-    <option name="LAST_COMMIT_MESSAGE" value="sezo001: 竖屏显示和去除标题栏" />
+    <MESSAGE value="demo016: 共享参数SharedPreferences和对实例1记住密码功能的补全" />
+    <option name="LAST_COMMIT_MESSAGE" value="demo016: 共享参数SharedPreferences和对实例1记住密码功能的补全" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -22,6 +22,7 @@ import com.hg.jy.activity.dm012.Act012;
 import com.hg.jy.activity.dm013.Act013;
 import com.hg.jy.activity.dm015.Act015;
 import com.hg.jy.activity.dm016.Act016;
+import com.hg.jy.activity.dm017.Act017;
 import com.hg.jy.activity.sz001.Asz001;
 
 @SuppressLint("NonConstantResourceId")
@@ -46,6 +47,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button dm014Btn = findViewById(R.id.dm014);
         Button dm015Btn = findViewById(R.id.dm015);
         Button dm016Btn = findViewById(R.id.dm016);
+        Button dm017Btn = findViewById(R.id.dm017);
         dm003Btn.setOnClickListener(this);
         dm004Btn.setOnClickListener(this);
         dm005Btn.setOnClickListener(this);
@@ -60,6 +62,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         dm014Btn.setOnClickListener(this);
         dm015Btn.setOnClickListener(this);
         dm016Btn.setOnClickListener(this);
+        dm017Btn.setOnClickListener(this);
 
         Button sz015Btn = findViewById(R.id.sz001);
         sz015Btn.setOnClickListener(this);
@@ -110,6 +113,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.dm016:
                 startActivity(new Intent(this, Act016.class));
+                break;
+            case R.id.dm017:
+                startActivity(new Intent(this, Act017.class));
                 break;
 
             case R.id.sz001:
