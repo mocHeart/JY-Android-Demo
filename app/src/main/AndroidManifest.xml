@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+  <!-- 存储卡读写 -->
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAG" />
 
   <application
     android:allowBackup="true"
@@ -8,6 +11,9 @@
     android:roundIcon="@mipmap/ic_launcher_round"
     android:supportsRtl="true"
     android:theme="@style/Theme.JYAndriodDemo">
+    <activity
+      android:name=".activity.dm018.Act018"
+      android:exported="false" />
     <activity
       android:name=".activity.dm017.Act017Sqlite"
       android:exported="false" />
