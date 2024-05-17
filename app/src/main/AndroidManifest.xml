@@ -13,6 +13,15 @@
     android:supportsRtl="true"
     android:theme="@style/Theme.JYAndriodDemo">
     <activity
+      android:name=".activity.sz002.Asz002ShoppingChannel"
+      android:exported="false" />
+    <activity
+      android:name=".activity.sz002.Asz002ShoppingDetail"
+      android:exported="false" />
+    <activity
+      android:name=".activity.sz002.Asz002"
+      android:exported="false" />
+    <activity
       android:name=".activity.dm019.Act19Room"
       android:exported="false" />
     <activity

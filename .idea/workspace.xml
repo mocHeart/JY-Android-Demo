@@ -87,6 +87,21 @@
           <theme>@style/Theme.JYAndriodDemo</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_asz002.xml">
+        <config>
+          <theme>@style/Theme.JYAndriodDemo</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_asz002_shopping_channel.xml">
+        <config>
+          <theme>@style/Theme.JYAndriodDemo</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_asz002_shopping_detail.xml">
+        <config>
+          <theme>@style/Theme.JYAndriodDemo</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_dm008.xml">
         <config>
           <theme>@style/Theme.JYAndriodDemo</theme>
@@ -112,6 +127,21 @@
           <theme>@style/Theme.JYAndriodDemo</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/sz002_item_cart.xml">
+        <config>
+          <theme>@style/Theme.JYAndriodDemo</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/sz002_item_goods.xml">
+        <config>
+          <theme>@style/Theme.JYAndriodDemo</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/sz002_title_shopping.xml">
+        <config>
+          <theme>@style/Theme.JYAndriodDemo</theme>
+        </config>
+      </layout>
     </layouts>
   </component>
   <component name="AndroidLogFilters">
@@ -121,20 +151,12 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="602cc4b9-2f08-4990-9653-0636c15eaab4" name="Default Changelist" comment="demo018:存储卡文件操作">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/MyApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/dm019/Act019.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/dm019/Act19Room.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/dm019/dao/BookDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/dm019/database/BookDatabase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/dm019/entity/BookInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_act019.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_act19_room.xml" afterDir="false" />
+    <list default="true" id="602cc4b9-2f08-4990-9653-0636c15eaab4" name="Default Changelist" comment="sez0002:购物车">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/MyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/MyApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/sz002/Asz002.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/sz002/Asz002.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/sz002/database/ShoppingDBHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/sz002/database/ShoppingDBHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/sz002_title_shopping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/sz002_title_shopping.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,6 +193,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="resourceFile" />
+        <option value="layoutResourceFile" />
         <option value="Class" />
       </list>
     </option>
@@ -303,6 +326,9 @@
     </key>
     <key name="android.template.1008513869">
       <recent name="com.hg.jy.activity.dm018" />
+    </key>
+    <key name="android.template.581644097">
+      <recent name="com.hg.jy.activity.sz002" />
     </key>
   </component>
   <component name="RunManager" selected="Android App.app">
@@ -572,7 +598,23 @@
       <option name="project" value="LOCAL" />
       <updated>1715824537622</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="demo019:应用组件Application">
+      <option name="closed" value="true" />
+      <created>1715843167230</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1715843167230</updated>
+    </task>
+    <task id="LOCAL-00023" summary="sez0002:购物车">
+      <option name="closed" value="true" />
+      <created>1715933258830</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1715933258830</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -608,7 +650,9 @@
     <MESSAGE value="demo016: 共享参数SharedPreferences和对实例1记住密码功能的补全" />
     <MESSAGE value="demo017: 数据库SQLite" />
     <MESSAGE value="demo018:存储卡文件操作" />
-    <option name="LAST_COMMIT_MESSAGE" value="demo018:存储卡文件操作" />
+    <MESSAGE value="demo019:应用组件Application" />
+    <MESSAGE value="sez0002:购物车" />
+    <option name="LAST_COMMIT_MESSAGE" value="sez0002:购物车" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
