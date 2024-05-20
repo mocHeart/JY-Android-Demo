@@ -13,6 +13,16 @@
     android:supportsRtl="true"
     android:theme="@style/Theme.JYAndriodDemo">
     <activity
+      android:name=".activity.dm020.client.Act020"
+      android:exported="false" />
+
+    <provider
+      android:name=".activity.dm020.server.provider.UserInfoProvider"
+      android:authorities="com.hg.jy.activity.dm020.server.provider.UserInfoProvider"
+      android:enabled="true"
+      android:exported="true" />
+
+    <activity
       android:name=".activity.sz002.Asz002ShoppingChannel"
       android:exported="false" />
     <activity

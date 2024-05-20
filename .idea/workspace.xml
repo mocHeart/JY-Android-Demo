@@ -72,6 +72,11 @@
           <theme>@style/Theme.JYAndriodDemo</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_act020.xml">
+        <config>
+          <theme>@style/Theme.JYAndriodDemo</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_act19_room.xml">
         <config>
           <theme>@style/Theme.JYAndriodDemo</theme>
@@ -152,11 +157,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="602cc4b9-2f08-4990-9653-0636c15eaab4" name="Default Changelist" comment="sez0002:购物车">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/dm020/client/Act020.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/dm020/server/database/UserDBHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/dm020/server/provider/UserInfoContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/dm020/server/provider/UserInfoProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_act020.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/MyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/MyApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/sz002/Asz002.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/sz002/Asz002.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/sz002/database/ShoppingDBHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/sz002/database/ShoppingDBHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/sz002_title_shopping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/sz002_title_shopping.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/utils/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/utils/ViewUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/utils/ViewUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,6 +210,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="mocHeart &lt;nuc2015@163.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -228,25 +244,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ScreenshotViewer.SavePath&quot;: &quot;C:/Users/haige/Documents/JYnote/Android/md/img&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/haige/Documents/code/android/JYAndriodDemo/app/src/main/res/drawable-xhdpi&quot;,
-    &quot;memory.settings.postsync.last.time.stamp&quot;: &quot;1715761262186&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ScreenshotViewer.SavePath": "C:/Users/haige/Documents/JYnote/Android/md/img",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "com.google.services.firebase.aqiPopupShown": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/haige/Documents/code/android/JYAndriodDemo/app/src/main/res/drawable-xhdpi",
+    "memory.settings.postsync.last.time.stamp": "1716168511341",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
-}</component>
+}]]></component>
   <component name="PsdUISettings">
     <option name="MODULE_TAB" value="Properties" />
   </component>
@@ -283,6 +299,9 @@
     </key>
     <key name="android.template.-1536494758">
       <recent name="com.hg.jy.activity.dm009" />
+    </key>
+    <key name="android.template.578890006">
+      <recent name="com.hg.jy.activity.dm020.client" />
     </key>
     <key name="android.template.1538755683">
       <recent name="com.hg.jy.activity" />
@@ -614,7 +633,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715933258830</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="sez0002:购物车">
+      <option name="closed" value="true" />
+      <created>1716166016778</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1716166016778</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
