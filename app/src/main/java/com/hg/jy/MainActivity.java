@@ -26,6 +26,7 @@ import com.hg.jy.activity.dm017.Act017;
 import com.hg.jy.activity.dm018.Act018;
 import com.hg.jy.activity.dm019.Act019;
 import com.hg.jy.activity.dm020.client.Act020;
+import com.hg.jy.activity.dm021.Act021;
 import com.hg.jy.activity.sz001.Asz001;
 import com.hg.jy.activity.sz002.Asz002;
 
@@ -55,6 +56,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button dm018Btn = findViewById(R.id.dm018);
         Button dm019Btn = findViewById(R.id.dm019);
         Button dm020Btn = findViewById(R.id.dm020);
+        Button dm021Btn = findViewById(R.id.dm021);
         dm003Btn.setOnClickListener(this);
         dm004Btn.setOnClickListener(this);
         dm005Btn.setOnClickListener(this);
@@ -73,6 +75,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         dm018Btn.setOnClickListener(this);
         dm019Btn.setOnClickListener(this);
         dm020Btn.setOnClickListener(this);
+        dm021Btn.setOnClickListener(this);
 
         Button sz001Btn = findViewById(R.id.sz001);
         Button sz002Btn = findViewById(R.id.sz002);
@@ -137,6 +140,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.dm020:
                 startActivity(new Intent(this, Act020.class));
+                break;
+            case R.id.dm021:
+                startActivity(new Intent(this, Act021.class));
                 break;
 
             case R.id.sz001:
