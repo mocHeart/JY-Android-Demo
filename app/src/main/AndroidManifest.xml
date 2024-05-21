@@ -7,10 +7,8 @@
 
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
   <uses-permission android:name="android.permission.READ_CONTACTS" />
   <uses-permission android:name="android.permission.WRITE_CONTACTS" />
-
   <uses-permission android:name="android.permission.READ_SMS" />
   <uses-permission android:name="android.permission.SEND_SMS" />
 
@@ -22,6 +20,9 @@
     android:roundIcon="@mipmap/ic_launcher_round"
     android:supportsRtl="true"
     android:theme="@style/Theme.JYAndriodDemo">
+    <activity
+      android:name=".activity.dm022.Act022"
+      android:exported="false" />
     <activity
       android:name=".activity.dm021.Act021"
       android:exported="false" />
