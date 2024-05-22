@@ -87,6 +87,21 @@
           <theme>@style/Theme.JYAndriodDemo</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_act023.xml">
+        <config>
+          <theme>@style/Theme.JYAndriodDemo</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_act023_provider_apk.xml">
+        <config>
+          <theme>@style/Theme.JYAndriodDemo</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_act023_provider_mms.xml">
+        <config>
+          <theme>@style/Theme.JYAndriodDemo</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_act19_room.xml">
         <config>
           <theme>@style/Theme.JYAndriodDemo</theme>
@@ -157,6 +172,11 @@
           <theme>@style/Theme.JYAndriodDemo</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/xml/file_paths.xml">
+        <config>
+          <theme>@style/Theme.JYAndriodDemo</theme>
+        </config>
+      </layout>
     </layouts>
   </component>
   <component name="AndroidLogFilters">
@@ -166,14 +186,24 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="602cc4b9-2f08-4990-9653-0636c15eaab4" name="Default Changelist" comment="demo021:运行时动态权限申请">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/dm022/Act022.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/dm022/entity/Contact.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_act022.xml" afterDir="false" />
+    <list default="true" id="602cc4b9-2f08-4990-9653-0636c15eaab4" name="Default Changelist" comment="demo022:读写联系人和监听短信">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/dm023/Act023.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/dm023/Act023ProviderApk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/dm023/Act023ProviderMms.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/dm023/ImageInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/add_pic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_act023.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_act023_provider_apk.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_act023_provider_mms.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/xml/file_paths.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/utils/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/utils/FileUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/utils/PermissionUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/utils/PermissionUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,9 +239,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="resourceFile" />
         <option value="layoutResourceFile" />
         <option value="Class" />
+        <option value="resourceFile" />
       </list>
     </option>
   </component>
@@ -250,34 +280,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ScreenshotViewer.SavePath": "C:/Users/haige/Documents/JYnote/Android/md/img",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "com.google.services.firebase.aqiPopupShown": "true",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/haige/Documents/code/android/JYAndriodDemo/app/src/main/res/drawable-xhdpi",
-    "memory.settings.postsync.last.time.stamp": "1716261793787",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.17",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ScreenshotViewer.SavePath&quot;: &quot;C:/Users/haige/Documents/JYnote/Android/md/img&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/haige/Documents/code/android/A6/customdialog/build/intermediates/apk/debug/customdialog.apk&quot;,
+    &quot;memory.settings.postsync.last.time.stamp&quot;: &quot;1716359205590&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
-}]]></component>
+}</component>
   <component name="PsdUISettings">
     <option name="MODULE_TAB" value="Properties" />
   </component>
   <component name="RecentsManager">
     <key name="android.template.-2006779765">
       <recent name="com.hg.jy.activity.dm006" />
-    </key>
-    <key name="android.template.1817869959">
-      <recent name="com.hg.jy.activity.dm005" />
     </key>
     <key name="android.template.-248456118">
       <recent name="com.hg.jy.activity.dm010" />
@@ -287,37 +314,15 @@
       <recent name="com.hg.jy.activity.dm007" />
       <recent name="com.hg.jy.activity" />
     </key>
-    <key name="android.template.731923137">
-      <recent name="com.hg.jy.activity.dm019" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.hg.jy" />
-    </key>
     <key name="android.template.-1521286479">
       <recent name="com.hg.jy.activity.dm004" />
       <recent name="com.hg.jy.activity.dm003" />
     </key>
-    <key name="android.template.1004429125">
-      <recent name="com.hg.jy.activity.dm017" />
-    </key>
-    <key name="android.template.-1346594278">
-      <recent name="com.hg.jy.activity.dm008" />
-    </key>
     <key name="android.template.-1536494758">
       <recent name="com.hg.jy.activity.dm009" />
     </key>
-    <key name="android.template.578890006">
-      <recent name="com.hg.jy.activity.dm021" />
-      <recent name="com.hg.jy.activity.dm020.client" />
-    </key>
     <key name="android.template.1538755683">
       <recent name="com.hg.jy.activity" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\haige\Documents\code\android\JYAndriodDemo\app\src\main\res\drawable-xhdpi" />
-      <recent name="C:\Users\haige\Documents\code\android\JYAndriodDemo\app\src\main\res\drawable-v24" />
-      <recent name="C:\Users\haige\Documents\code\android\JYAndriodDemo\app\src\main\res\drawable" />
-      <recent name="E:\code\android\JYAndriodDemo\app\src\main\res\drawable" />
     </key>
     <key name="android.template.142269403">
       <recent name="com.hg.jy.activity.dm009" />
@@ -328,10 +333,6 @@
       <recent name="C:\Users\haige\Documents\code\android\JYAndriodDemo\app\src\main\res\drawable-v24" />
       <recent name="C:\Users\haige\Documents\code\android\JYAndriodDemo\app\src\main\res\layout" />
       <recent name="C:\Users\haige\Documents\code\android\JYAndriodDemo\app\src\main\res\layout\dm008" />
-    </key>
-    <key name="android.template.1612664133">
-      <recent name="com.hg.jy.activity.dm011" />
-      <recent name="com.hg.jy.activity.dm010" />
     </key>
     <key name="android.template.-1904069273">
       <recent name="com.hg.jy.activity.dm016" />
@@ -345,6 +346,41 @@
     <key name="android.template.1162167373">
       <recent name="com.hg.jy.activity.dm012" />
     </key>
+    <key name="android.template.1528469475">
+      <recent name="com.hg.jy.activity.dm022" />
+    </key>
+    <key name="android.template.1817869959">
+      <recent name="com.hg.jy.activity.dm005" />
+    </key>
+    <key name="android.template.731923137">
+      <recent name="com.hg.jy.activity.dm019" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.hg.jy" />
+    </key>
+    <key name="android.template.1004429125">
+      <recent name="com.hg.jy.activity.dm017" />
+    </key>
+    <key name="android.template.-1346594278">
+      <recent name="com.hg.jy.activity.dm008" />
+    </key>
+    <key name="android.template.578890006">
+      <recent name="com.hg.jy.activity.dm021" />
+      <recent name="com.hg.jy.activity.dm020.client" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\haige\Documents\code\android\JYAndriodDemo\app\src\main\res\drawable-xhdpi" />
+      <recent name="C:\Users\haige\Documents\code\android\JYAndriodDemo\app\src\main\res\drawable-v24" />
+      <recent name="C:\Users\haige\Documents\code\android\JYAndriodDemo\app\src\main\res\drawable" />
+      <recent name="E:\code\android\JYAndriodDemo\app\src\main\res\drawable" />
+    </key>
+    <key name="android.template.-331415069">
+      <recent name="com.hg.jy.activity.dm023" />
+    </key>
+    <key name="android.template.1612664133">
+      <recent name="com.hg.jy.activity.dm011" />
+      <recent name="com.hg.jy.activity.dm010" />
+    </key>
     <key name="android.template.2052711717">
       <recent name="com.hg.jy.activity.sz001" />
       <recent name="com.hg.jy.activity.sz100" />
@@ -355,9 +391,6 @@
     </key>
     <key name="android.template.581644097">
       <recent name="com.hg.jy.activity.sz002" />
-    </key>
-    <key name="android.template.1528469475">
-      <recent name="com.hg.jy.activity.dm022" />
     </key>
   </component>
   <component name="RunManager" selected="Android App.app">
@@ -667,7 +700,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716260403945</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="demo022:读写联系人和监听短信">
+      <option name="closed" value="true" />
+      <created>1716278837021</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1716278837021</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -707,7 +748,8 @@
     <MESSAGE value="sez0002:购物车" />
     <MESSAGE value="demo020:共享数据ContentProvider" />
     <MESSAGE value="demo021:运行时动态权限申请" />
-    <option name="LAST_COMMIT_MESSAGE" value="demo021:运行时动态权限申请" />
+    <MESSAGE value="demo022:读写联系人和监听短信" />
+    <option name="LAST_COMMIT_MESSAGE" value="demo022:读写联系人和监听短信" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -716,6 +758,11 @@
           <url>file://$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/dm006/ActivityDm006.java</url>
           <line>47</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/dm023/Act023ProviderMms.java</url>
+          <line>160</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

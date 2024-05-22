@@ -1,10 +1,18 @@
 package com.hg.jy.activity.utils;
 
+import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.os.Build;
+import android.util.Log;
+
+import androidx.core.content.FileProvider;
+
+import com.hg.jy.R;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.FileReader;
@@ -58,6 +66,25 @@ public class FileUtil {
             e.printStackTrace();
         }
         return bitmap;
+    }
+
+    // 检查文件是否存在，以及文件路径是否合法
+    public static boolean checkFileUri(Context ctx, String path) {
+        File file = new File(path);
+        Log.d(Constants.TAG, "old path:" + path);
+        if (!file.exists() || !file.isFile() || file.length() <= 0) {
+            return false;
+        }
+        try {
+            // 检测文件路径是否支持 FileProvider 访问方式，如果发生异常，说明不支持
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+                FileProvider.getUriForFile(ctx, ctx.getString(R.string.file_provider), file);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+        return true;
     }
 
 }

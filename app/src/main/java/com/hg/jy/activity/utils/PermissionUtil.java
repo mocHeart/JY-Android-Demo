@@ -8,7 +8,7 @@ import androidx.core.content.ContextCompat;
 public class PermissionUtil {
 
     // 检查多个权限, 返回true表示已完全启用权限, 返回false表示未完全启用权限
-    public static void checkPermission(Activity act, String[] permissions, int requestCode) {
+    public static boolean checkPermission(Activity act, String[] permissions, int requestCode) {
         int check = PackageManager.PERMISSION_GRANTED;
         for (String permission : permissions) {
                 check = ContextCompat.checkSelfPermission(act, permission);
@@ -19,7 +19,9 @@ public class PermissionUtil {
         // 未开启该权限, 则请求系统弹窗, 好让用户选择是否立即开启权限
         if (check != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(act, permissions, requestCode);
+            return false;
         }
+        return true;
     }
 
     // 检查权限结果数组. 返回true表示都已经获得授权. 返回false表示至少有一个未获得授权

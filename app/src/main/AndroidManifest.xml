@@ -21,6 +21,15 @@
     android:supportsRtl="true"
     android:theme="@style/Theme.JYAndriodDemo">
     <activity
+      android:name=".activity.dm023.Act023ProviderApk"
+      android:exported="false" />
+    <activity
+      android:name=".activity.dm023.Act023ProviderMms"
+      android:exported="false" />
+    <activity
+      android:name=".activity.dm023.Act023"
+      android:exported="false" />
+    <activity
       android:name=".activity.dm022.Act022"
       android:exported="false" />
     <activity
@@ -142,7 +151,19 @@
       <meta-data
         android:name="android.app.shortcuts"
         android:resource="@xml/shortcuts" />
-    </activity>
+    </activity> <!-- 兼容Android7.0，把访问文件的Uri方式改为FileProvider -->
+    <!-- android:grantUriPermissions 必须设置为 true -->
+    <provider
+      android:name="androidx.core.content.FileProvider"
+      android:authorities="@string/file_provider"
+      android:exported="false"
+      android:grantUriPermissions="true">
+
+      <!-- 配置哪些路径是可以通过FileProvider访问的 -->
+      <meta-data
+        android:name="android.support.FILE_PROVIDER_PATHS"
+        android:resource="@xml/file_paths" />
+    </provider>
   </application>
 
 </manifest>
