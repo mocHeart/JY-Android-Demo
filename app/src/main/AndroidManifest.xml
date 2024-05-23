@@ -21,6 +21,9 @@
     android:supportsRtl="true"
     android:theme="@style/Theme.JYAndriodDemo">
     <activity
+      android:name=".activity.dm024.Act024"
+      android:exported="false" />
+    <activity
       android:name=".activity.dm023.Act023ProviderApk"
       android:exported="false" />
     <activity

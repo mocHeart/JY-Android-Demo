@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="下拉模式的列表框"
+    android:textSize="17sp" />
+
+  <Spinner
+    android:id="@+id/dm024_sp_dropdown"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:spinnerMode="dropdown" />
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:text="对话框模式的列表框"
+    android:textSize="17sp" />
+
+  <Spinner
+    android:id="@+id/dm024_sp_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:spinnerMode="dialog" />
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:text="行星的简单适配器"
+    android:textSize="17sp" />
+
+  <Spinner
+    android:id="@+id/dm024_sp_icon"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:spinnerMode="dropdown" />
+
+</LinearLayout>

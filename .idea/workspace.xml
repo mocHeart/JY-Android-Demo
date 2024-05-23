@@ -22,6 +22,16 @@
           <theme>@style/Theme.JYAndriodDemo</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/act024_item_select.xml">
+        <config>
+          <theme>@style/Theme.JYAndriodDemo</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/act024_item_simple.xml">
+        <config>
+          <theme>@style/Theme.JYAndriodDemo</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_act011.xml">
         <config>
           <theme>@style/Theme.JYAndriodDemo</theme>
@@ -98,6 +108,11 @@
         </config>
       </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_act023_provider_mms.xml">
+        <config>
+          <theme>@style/Theme.JYAndriodDemo</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_act024.xml">
         <config>
           <theme>@style/Theme.JYAndriodDemo</theme>
         </config>
@@ -186,24 +201,21 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="602cc4b9-2f08-4990-9653-0636c15eaab4" name="Default Changelist" comment="demo022:读写联系人和监听短信">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/dm023/Act023.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/dm023/Act023ProviderApk.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/dm023/Act023ProviderMms.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/dm023/ImageInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/add_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_act023.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_act023_provider_apk.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_act023_provider_mms.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/xml/file_paths.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="602cc4b9-2f08-4990-9653-0636c15eaab4" name="Default Changelist" comment="demo023:共享文件FileProvider">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/dm024/Act024.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/diqiu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/huoxing.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/jinxing.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/muxing.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/shuixing.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/tuxing.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/act024_item_select.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/act024_item_simple.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_act024.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/utils/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/utils/FileUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/utils/PermissionUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/utils/PermissionUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -291,8 +303,8 @@
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/haige/Documents/code/android/A6/customdialog/build/intermediates/apk/debug/customdialog.apk&quot;,
-    &quot;memory.settings.postsync.last.time.stamp&quot;: &quot;1716359205590&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/haige/Documents/code/android/JYAndriodDemo/app/src/main/res/layout&quot;,
+    &quot;memory.settings.postsync.last.time.stamp&quot;: &quot;1716452212383&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -349,6 +361,9 @@
     <key name="android.template.1528469475">
       <recent name="com.hg.jy.activity.dm022" />
     </key>
+    <key name="android.template.1334326516">
+      <recent name="com.hg.jy.activity.dm024" />
+    </key>
     <key name="android.template.1817869959">
       <recent name="com.hg.jy.activity.dm005" />
     </key>
@@ -369,10 +384,11 @@
       <recent name="com.hg.jy.activity.dm020.client" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\haige\Documents\code\android\JYAndriodDemo\app\src\main\res\layout" />
+      <recent name="C:\Users\haige\Documents\code\android\JYAndriodDemo\app\src\main\res\drawable-xxhdpi" />
       <recent name="C:\Users\haige\Documents\code\android\JYAndriodDemo\app\src\main\res\drawable-xhdpi" />
       <recent name="C:\Users\haige\Documents\code\android\JYAndriodDemo\app\src\main\res\drawable-v24" />
       <recent name="C:\Users\haige\Documents\code\android\JYAndriodDemo\app\src\main\res\drawable" />
-      <recent name="E:\code\android\JYAndriodDemo\app\src\main\res\drawable" />
     </key>
     <key name="android.template.-331415069">
       <recent name="com.hg.jy.activity.dm023" />
@@ -708,7 +724,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716278837021</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="demo023:共享文件FileProvider">
+      <option name="closed" value="true" />
+      <created>1716368316336</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1716368316336</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -749,7 +773,8 @@
     <MESSAGE value="demo020:共享数据ContentProvider" />
     <MESSAGE value="demo021:运行时动态权限申请" />
     <MESSAGE value="demo022:读写联系人和监听短信" />
-    <option name="LAST_COMMIT_MESSAGE" value="demo022:读写联系人和监听短信" />
+    <MESSAGE value="demo023:共享文件FileProvider" />
+    <option name="LAST_COMMIT_MESSAGE" value="demo023:共享文件FileProvider" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
