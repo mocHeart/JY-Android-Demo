@@ -21,6 +21,15 @@
     android:supportsRtl="true"
     android:theme="@style/Theme.JYAndriodDemo">
     <activity
+      android:name=".activity.dm027.Act027LaunchSimple"
+      android:exported="false" />
+    <activity
+      android:name=".activity.dm027.Act027PagerTab"
+      android:exported="false" />
+    <activity
+      android:name=".activity.dm027.Act027"
+      android:exported="false" />
+    <activity
       android:name=".activity.dm026.Act026"
       android:exported="false" />
     <activity

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <androidx.viewpager.widget.ViewPager
+    android:id="@+id/dm027_vp_content"
+    android:layout_width="match_parent"
+    android:layout_height="370dp" />
+
+  <Button
+    android:id="@+id/dm027_toPagerTabStrip"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="跳转到【翻页标签栏】"
+    android:textSize="19sp"
+    android:textColor="@color/black" />
+
+  <Button
+    android:id="@+id/dm027_toLaunchSimple"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="跳转到【简单启动引导页】"
+    android:textSize="19sp"
+    android:textColor="@color/black" />
+
+</LinearLayout>

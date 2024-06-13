@@ -47,6 +47,11 @@
           <theme>@style/Theme.JYAndriodDemo</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/act027_item_launch.xml">
+        <config>
+          <theme>@style/Theme.JYAndriodDemo</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_act011.xml">
         <config>
           <theme>@style/Theme.JYAndriodDemo</theme>
@@ -147,6 +152,21 @@
           <theme>@style/Theme.JYAndriodDemo</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_act027.xml">
+        <config>
+          <theme>@style/Theme.JYAndriodDemo</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_act027_launch_simple.xml">
+        <config>
+          <theme>@style/Theme.JYAndriodDemo</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_act027_pager_tab.xml">
+        <config>
+          <theme>@style/Theme.JYAndriodDemo</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_act19_room.xml">
         <config>
           <theme>@style/Theme.JYAndriodDemo</theme>
@@ -231,15 +251,23 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="602cc4b9-2f08-4990-9653-0636c15eaab4" name="Default Changelist" comment="demo025:列表视图ListView及基本适配器">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/dm026/Act026.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/dm026/adapter/PlanetGridAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/act026_item_grid.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_act026.xml" afterDir="false" />
+    <list default="true" id="602cc4b9-2f08-4990-9653-0636c15eaab4" name="Default Changelist" comment="demo026:网格视图GridView">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/dm027/Act027.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/dm027/Act027LaunchSimple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/dm027/Act027PagerTab.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/dm027/adapter/ImagePagerAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/dm027/adapter/LaunchSimpleAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/guide_bg1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/guide_bg2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/guide_bg3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/guide_bg4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/act027_item_launch.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_act027.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_act027_launch_simple.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_act027_pager_tab.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/dm005/ActivityDm005.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/hg/jy/activity/dm005/ActivityDm005.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -328,8 +356,8 @@
     "cidr.known.project.marker": "true",
     "com.google.services.firebase.aqiPopupShown": "true",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/haige/Documents/code/android/JYAndriodDemo/app/src/main/res/layout",
-    "memory.settings.postsync.last.time.stamp": "1717573410647",
+    "last_opened_file_path": "C:/Users/haige/Documents/code/android/JYAndriodDemo/app/src/main/res/drawable-xxhdpi",
+    "memory.settings.postsync.last.time.stamp": "1718245830898",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.17",
     "project.structure.side.proportion": "0.2",
@@ -380,6 +408,9 @@
     <key name="android.template.1273939523">
       <recent name="com.hg.jy.activity.dm017" />
     </key>
+    <key name="android.template.-241415314">
+      <recent name="com.hg.jy.activity.dm027" />
+    </key>
     <key name="android.template.-1117234533">
       <recent name="com.hg.jy.activity.dm026" />
     </key>
@@ -415,8 +446,8 @@
       <recent name="com.hg.jy.activity.dm020.client" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\haige\Documents\code\android\JYAndriodDemo\app\src\main\res\layout" />
       <recent name="C:\Users\haige\Documents\code\android\JYAndriodDemo\app\src\main\res\drawable-xxhdpi" />
+      <recent name="C:\Users\haige\Documents\code\android\JYAndriodDemo\app\src\main\res\layout" />
       <recent name="C:\Users\haige\Documents\code\android\JYAndriodDemo\app\src\main\res\drawable-xhdpi" />
       <recent name="C:\Users\haige\Documents\code\android\JYAndriodDemo\app\src\main\res\drawable-v24" />
       <recent name="C:\Users\haige\Documents\code\android\JYAndriodDemo\app\src\main\res\drawable" />
@@ -782,7 +813,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717572670592</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="demo026:网格视图GridView">
+      <option name="closed" value="true" />
+      <created>1717578779500</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1717578779500</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -799,7 +838,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="demo005:视图View基础(宽高,边距,对齐)" />
     <MESSAGE value="demo006:常用布局" />
     <MESSAGE value="demo007:按钮控件-Button" />
     <MESSAGE value="demo008:图像显示-ImageXxx" />
@@ -824,7 +862,8 @@
     <MESSAGE value="demo023:共享文件FileProvider" />
     <MESSAGE value="demo024:下拉列表Spinner" />
     <MESSAGE value="demo025:列表视图ListView及基本适配器" />
-    <option name="LAST_COMMIT_MESSAGE" value="demo025:列表视图ListView及基本适配器" />
+    <MESSAGE value="demo026:网格视图GridView" />
+    <option name="LAST_COMMIT_MESSAGE" value="demo026:网格视图GridView" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
